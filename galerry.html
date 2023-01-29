@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+#gallery {
+  padding-top: 40px;
+}
+@media screen and (min-width: 991px) {
+  #gallery {
+    padding: 60px 30px 0 30px;
+  }
+}
+
+.img-wrapper {
+  position: relative;
+  margin-top: 15px;
+}
+.img-wrapper img {
+  width: 100%;
+}
+
+.img-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.img-overlay i {
+  color: #fff;
+  font-size: 3em;
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#overlay img {
+  margin: 0;
+  width: 80%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 5%;
+}
+@media screen and (min-width: 768px) {
+  #overlay img {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #overlay img {
+    width: 50%;
+  }
+}
+
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#nextButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #nextButton {
+    font-size: 3em;
+  }
+}
+
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+}
+#prevButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #prevButton {
+    font-size: 3em;
+  }
+}
+
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#exitButton:hover {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  #exitButton {
+    font-size: 3em;
+  }
+}
+        
+    </style>
+    <style>
+        .btn{
+          position: relative;
+          z-index: 2888;
+          background-color: #53c6ad;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          color: #fffff4;
+        }
+        
+        .btn:hover{
+          background-color: #53c6ad;
+          color: #fffff4;
+        }</style>
+</head>
+<body>
+    <section id="gallery" class="mb-5">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" class="btn">home</a>
+            <H1 class="center" style="text-align: center;">Gallery</H1>
+            <p>mandi hehe^^</p>
+        </div>
+        <div class="container">
+          <div id="image-gallery">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 image">
+                  <div class="img-wrapper">
+                      <a href="galery/0.png">
+                        <img src="galery/0.png" alt="" class="img-responsive">
+                      </a>
+                    <div class="img-overlay">
+                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                  <a href="galery/1.png">
+                    <img src="galery/1.png" alt="" class="img-responsive">
+                  </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/2.png">
+                      <img src="galery/2.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/3.png">
+                      <img src="galery/3.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/4.png">
+                      <img src="galery/4.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/5.png">
+                      <img src="galery/5.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/6.png">
+                      <img src="galery/6.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/7.png">
+                      <img src="galery/7.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/8.png">
+                      <img src="galery/8.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/10.png">
+                      <img src="galery/10.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/11.png">
+                      <img src="galery/11.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/13.png">
+                      <img src="galery/13.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/14.png">
+                      <img src="galery/14.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/15.png">
+                      <img src="galery/15.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/16.png">
+                      <img src="galery/16.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/17.png">
+                      <img src="galery/17.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                <div class="img-wrapper">
+                    <a href="galery/18.png">
+                      <img src="galery/18.png" alt="" class="img-responsive">
+                    </a>
+                  <div class="img-overlay">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End row -->
+          </div><!-- End image gallery -->
+        </div><!-- End container -->
+      </section>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script>
+      
+      // Gallery image hover
+$(".img-wrapper").hover(
+  function () {
+    $(this).find(".img-overlay").animate({ opacity: 1 }, 600);
+  },
+  function () {
+    $(this).find(".img-overlay").animate({ opacity: 0 }, 600);
+  }
+);
+
+// Lightbox
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+var $prevButton = $(
+  '<div id="prevButton"><i class="fa fa-chevron-left"></i></div>'
+);
+var $nextButton = $(
+  '<div id="nextButton"><i class="fa fa-chevron-right"></i></div>'
+);
+var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+
+// Add overlay
+$overlay
+  .append($image)
+  .prepend($prevButton)
+  .append($nextButton)
+  .append($exitButton);
+$("#gallery").append($overlay);
+
+// Hide overlay on default
+$overlay.hide();
+
+// When an image is clicked
+$(".img-overlay").click(function (event) {
+  // Prevents default behavior
+  event.preventDefault();
+  // Adds href attribute to variable
+  var imageLocation = $(this).prev().attr("href");
+  // Add the image src to $image
+  $image.attr("src", imageLocation);
+  // Fade in the overlay
+  $overlay.fadeIn("slow");
+});
+
+// When the overlay is clicked
+$overlay.click(function () {
+  // Fade out the overlay
+  $(this).fadeOut("slow");
+});
+
+// When next button is clicked
+$nextButton.click(function (event) {
+  // Hide the current image
+  $("#overlay img").hide();
+  // Overlay image location
+  var $currentImgSrc = $("#overlay img").attr("src");
+  // Image with matching location of the overlay image
+  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+  // Finds the next image
+  var $nextImg = $($currentImg.closest(".image").next().find("img"));
+  // All of the images in the gallery
+  var $images = $("#image-gallery img");
+  // If there is a next image
+  if ($nextImg.length > 0) {
+    // Fade in the next image
+    $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+  } else {
+    // Otherwise fade in the first image
+    $("#overlay img").attr("src", $($images[0]).attr("src")).fadeIn(800);
+  }
+  // Prevents overlay from being hidden
+  event.stopPropagation();
+});
+
+// When previous button is clicked
+$prevButton.click(function (event) {
+  // Hide the current image
+  $("#overlay img").hide();
+  // Overlay image location
+  var $currentImgSrc = $("#overlay img").attr("src");
+  // Image with matching location of the overlay image
+  var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
+  // Finds the next image
+  var $nextImg = $($currentImg.closest(".image").prev().find("img"));
+  // Fade in the next image
+  $("#overlay img").attr("src", $nextImg.attr("src")).fadeIn(800);
+  // Prevents overlay from being hidden
+  event.stopPropagation();
+});
+
+// When the exit button is clicked
+$exitButton.click(function () {
+  // Fade out the overlay
+  $("#overlay").fadeOut("slow");
+});
+
+
+      </script>
+</body>
+</html>
